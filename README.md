@@ -38,4 +38,4 @@ This proxy project demonstrates my end-to-end machine learning pipeline:
 3.  **Inference:** Live rendering of the model detecting the toy car in real-time.
 
 ---
-*Developed by Denys | Crissiere, Switzerland*
+*Developed by Denys | Crissier, Switzerland*
