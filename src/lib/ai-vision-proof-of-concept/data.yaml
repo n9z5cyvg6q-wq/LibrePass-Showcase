@@ -1,0 +1,5 @@
+train: /Users/denisr./LibrePass code/LibrePass/vision/dataset/train/images
+val: /Users/denisr./LibrePass code/LibrePass/vision/dataset/train/images
+
+nc: 1
+names: ['plate']
