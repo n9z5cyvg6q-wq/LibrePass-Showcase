@@ -8,7 +8,9 @@ Libre Systems converts legacy parking infrastructure into 100% accurate, real-ti
 ---
 
 ## 🎥 System Walkthrough
-*(Drag and drop your golden video file exactly here on the GitHub website!)*
+*(
+[![Libre Systems Architecture Demo](https://github.com/user-attachments/assets/6182b530-4b6e-496f-9833-3103cc9f4130)](https://youtu.be/uY1qOJz8_Z8)
+)*
 
 ---
 
