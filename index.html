@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>LibrePass – Smart Parking Lausanne</title>
+    <meta name="description" content="Find and pay for parking in Lausanne with LibrePass. Real-time availability, EV charging, and TWINT payments.">
+    <meta name="author" content="LibrePass" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/07ea92b7-a9e2-476b-ac44-d9c43e6cd661/id-preview-ef7de26d--56d12cff-16dc-46dc-8dc5-a80f115b9ad1.lovable.app-1774830424842.png">
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Lovable" />
+    <meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/07ea92b7-a9e2-476b-ac44-d9c43e6cd661/id-preview-ef7de26d--56d12cff-16dc-46dc-8dc5-a80f115b9ad1.lovable.app-1774830424842.png">
+    <meta property="og:title" content="LibrePass – Smart Parking Lausanne">
+  <meta name="twitter:title" content="LibrePass – Smart Parking Lausanne">
+  <meta property="og:description" content="Find and pay for parking in Lausanne with LibrePass. Real-time availability, EV charging, and TWINT payments.">
+  <meta name="twitter:description" content="Find and pay for parking in Lausanne with LibrePass. Real-time availability, EV charging, and TWINT payments.">
+</head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      // Clear stale service worker caches on load
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.getRegistrations().then(function(registrations) {
+          registrations.forEach(function(r) { r.unregister(); });
+        });
+        if ('caches' in window) {
+          caches.keys().then(function(names) {
+            names.forEach(function(name) { caches.delete(name); });
+          });
+        }
+      }
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
