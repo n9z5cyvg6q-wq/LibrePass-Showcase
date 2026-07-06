@@ -1,6 +1,6 @@
 # 🏎️ Multi-Class Object & ALPR Detection (Proxy Project)
 
-> **Context:** The production Edge-AI computer vision models for Libre Systems (including the ALPR pipelines) are maintained in a private repository to protect intellectual property. This proxy project demonstrates my custom machine learning workflow and multi-class computer vision training capabilities from scratch.
+> **Context:** The production Edge-AI computer vision models for Libre Systems (including the ALPR pipelines) are maintained in a private repository to protect corporate intellectual property. This proxy project demonstrates my custom machine learning workflow and multi-class computer vision training capabilities from scratch.
 
 ## 📊 Dataset Architecture
 The custom dataset was manually captured, and **Roboflow was utilized exclusively as a labeling tool** to generate the annotations. The dataset is structured to independently detect both the physical vehicle and its localized license plate across diverse environmental states.
@@ -12,12 +12,12 @@ The custom dataset was manually captured, and **Roboflow was utilized exclusivel
 
 ---
 
-## 🧠 Local Compute & Training Pipeline
-While many rely on managed cloud instances or automated web training, the entire training pipeline for this model was engineered and executed **100% locally on macOS hardware**. The Python architecture handles the following end-to-end steps:
+## 🧠 Local Compute & Training Pipeline (Apple Silicon M4 Pro)
+While many developers rely on managed cloud GPUs (AWS/GCP) or automated web training, the entire training pipeline for this model was engineered and executed **100% locally on an Apple Silicon M4 Pro**. The Python architecture handles the following end-to-end steps:
 
 1.  **Local Data Ingestion:** Loads the structural mapping defined in `data.yaml` to process the local filesystem into training batches.
-2.  **Multi-Class Loss Optimization:** Tracks bounding-box regression loss and independent class probability loss over multiple training epochs to minimize localization errors for both classes simultaneously.
-3.  **Hardware-Optimized Weight Generation:** Exports the optimized model weights directly to the local machine once validation accuracy stabilizes.
+2.  **Hardware-Accelerated Optimization:** Tracks bounding-box regression loss and independent class probability loss over multiple training epochs, utilizing the M4 Pro's architecture to efficiently minimize localization errors for both classes simultaneously.
+3.  **Weight Generation:** Exports the optimized model weights directly to the local machine once validation accuracy stabilizes.
 
 ---
 
